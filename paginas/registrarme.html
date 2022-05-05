@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
+<title>Game Noticias - Registrarme</title>
+</head>
+<body>
+    <header>
+        <img src="../imagenes/game-noticias.jpg" alt="Logotipo Game" width="300" height="300">
+    </header>
+   
+     <form action="donde se va a enviar esta informacion" method="como se va a enviar esa info: get(publica) o post (privada)" enctype="en que codificacion se va a enviar esa info" class="formulario">
+        <!--van a colocar si o si los campos de formulario y el boton de envio-->
+        <div>
+            <label for="Nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresar su nombre completo"> 
+        </div>
+      
+
+        <div>
+            <label for="Edad">Edad: </label>
+            <input type="number" id="Edad" name="Edad" placeholder="Ingrese su edad">
+        </div>
+
+        <div>
+            <label for="Correo">Email:</label>
+            <input type="email" id="Correo" name="Correo" placeholder="Ingrese su correo">
+        </div>
+        
+        <div>
+            <label for="Contraseña">Contraseña:</label>
+            <input type="password" id="Contraseña" name="Contraseña" placeholder="Ingrese su contraseña">
+        </div>
+
+        
+                    
+            <!--seleccion unica-->
+            <div>
+                <label for="">Femenino:</label>
+                <input type="radio" name="genero" id="Femenino">
+                <label for="">Masculino:</label>
+                <input type="radio" name="genero" id="Masculino">
+            </div>
+          
+            <!--seleccion multiple-->
+           
+          
+            <div>
+                <label for="A">Aficionado</label>
+                <input type="checkbox" name="GS" id="A">
+            </div>
+
+            <div>
+                <label for="UO">Profesor</label>
+                <input type="checkbox" name="GS" id="UO">
+            </div>
+
+            <div>
+                <label for="W">Jugador</label>
+                <input type="checkbox" name="GS" id="W">
+            </div>
+          
+            <div>
+                <label for="pais">Pais</label>
+                <select name="pais" id="pais">
+                    <option value="Argentina">Argentina</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Chile">Chile</option>
+                </select>
+                
+            </div>
+            
+          
+            <label for="comentario">Comentario:</label>
+            <textarea placeholder="Ingrese su comentario" name="comentario" id="comentario" cols="20" rows="5"></textarea>
+           
+            <div>
+                <label for="terminos">Aceptar Términos y Condiciones</label>
+                <input type="checkbox" name="términos" id="terminos">
+            </div>
+
+      <!--boton de envio 1-->
+      <input type="submit" value="Enviar" class="buttom">
+
+    <footer>
+        <img src="../imagenes/game-noticias.jpg" alt="Logotipo Game" width="150" height="150">
+      
+        Derechos reservados de Game 
+    </footer>
+</body>
+</html>

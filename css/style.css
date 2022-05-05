@@ -1,0 +1,676 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+
+
+.body {
+    font-family: 'Montserrat'
+}
+
+
+
+
+.header {
+padding: 1rem;
+background-color: beige;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+
+}
+
+.header__marca {
+    width: 100px;
+    height: 100px;
+}
+
+.header__logo {
+    height: 100%;
+
+}
+
+.nav {
+    padding: 1rem;
+
+}
+
+.nav__lista {
+    
+    display: flex;
+    
+    list-style: none;
+    flex-direction: row;
+  
+    /*gap: 1rem;*/
+}
+
+.nav__item {
+    margin-left: 1rem;
+}
+
+.nav__enlace {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+.seccion1 {
+height: 500px;
+width: 100%;
+background-color: #CFDB2F; 
+color: #F18423;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+background-image:url(../imagenes/blob.png);
+background-size: cover;
+background-position: 420px center;
+background-repeat: no-repeat;
+
+
+
+}
+
+.seccion1__titulo{
+    font-size: 100px;
+    margin-bottom: 1rem;
+}
+
+.seccion1__subtitulo{
+    font-size: 50px;
+    font-style: italic;
+    margin-bottom: 2rem;
+   
+}
+
+.seccion1__parrafo {
+font-size: 15px;
+text-transform: uppercase;
+}
+
+
+.seccion2__titulo {
+    font-size: 50px;
+}
+
+.grid {
+    border: 2px solid grey;
+    padding: 1rem;
+    
+
+    /* Propiedad obligatoria para isar CSS Grid */
+ display: grid;
+ 
+
+ /* Dibujar primero las columnas de dicha cuadricula */
+ /* grid-template-columns: col1 col2 col3...; */
+ grid-template-columns: 100px 100px 100px;
+ grid-template-columns: 33% 33% 33%;
+ grid-template-columns: repeat(3, 1fr);
+ 
+
+
+ /*dibujar primero las filas de dicha cuadricula */
+ /*grid-template-rows: row1 row2 row3; */
+ grid-template-rows: 200px 200px 200px;
+ grid-template-rows: 33% 33% 33%;
+ grid-template-rows: repeat(3, 1fr);
+
+
+ /*grid-template-rows: 200px 200px 200px; */
+
+ 
+
+ /* Referenciar la cuadricula por areas */
+ /* grid-template-areas: 
+ "fila1"
+ "fila2"
+ "fila3";
+ 
+ (coloco las comillas sobles ("") tantas veces tenga como filas
+ si tengo 3 filas, voy a poner tres veces "" 
+ 
+ ¿Cómo meto las columnas en las filas?:
+
+ grid-template-areas: 
+ "elemento 1 elemtno 2 elemento 3" FILA 1
+ "elemento 1 elmento 2 elemento 3" FILA 2
+ "elemento 1 none         elemento 3" FILA 3
+ */
+ grid-template-areas: 
+ "elemento1 elemento1 elemento1"
+ "elemento2 elemento3 elemento3"
+ "elemento4 elemento4 elemento5";
+
+ justify-items:center;
+ align-items:stretch;
+
+/*Si tenemos espacio disponible en el padre, podemos mover todos los cuadraditos a una punta o a la otra (o al centro) usando
+ JUSTIFY-CONTENT y ALIGN CONTENT */
+
+justify-content: flex-start;
+align-content:stretch;
+ 
+ 
+ /*EJ: 
+  justify-content: space-between ;         /*Tambien podemos separarlo usando SPACE 
+ align-content: flex-end;  */ 
+
+
+ /* Permite generar un hueco o separacion interna entre filas y columnas. ESO VA EN EL PADRE*/
+ column-gap: 10px;
+ row-gap: 20px;
+ /*eso mismo se puede escribir de la siguiente manera: */
+ gap: 10px 20px; 
+
+ 
+}
+
+.grid__hijo {
+    border: solid beige;
+    padding: 0.5rem;  
+    color: white;
+    text-align: center;
+   overflow: hidden;
+    position: relative;
+    object-fit: cover;
+
+}
+
+
+/* Esta forma es mas simple, pero tambien podriamos haber puesto ".Grid__img" y ponerle esa clase a cada imagen */
+.grid__hijo--img {
+width: 40%;
+height: 50%;
+}
+
+.grid__hijo--1 {
+    grid-area: elemento1;
+background-color: #F18423;
+
+
+}
+
+.grid__hijo--2 {
+    grid-area: elemento2;
+background-color: #F18423;
+
+}
+
+.grid__hijo--3 {
+    grid-area: elemento3;
+background-color: #CFDB2F;
+
+}
+
+.grid__hijo--4 {
+    grid-area: elemento4;
+background-color:  #CFDB2F;
+
+
+}
+
+.grid__hijo--5 {
+    grid-area: elemento5;
+background-color: #F18423;
+
+}
+
+
+.grid__texto {
+    position: absolute;
+    bottom: 0;   
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.349);   
+    color: black;
+    padding: 0.5rem 1rem;
+   
+}
+
+.grid__hijo--parrafo {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    margin: 1rem;
+    justify-content: flex-start;
+    align-content:center;
+    overflow:hidden;
+    
+
+    
+}
+
+.grid__hijo--span {
+    font-size: 20px;
+    display: block;
+    margin: 1rem;
+}
+
+.footer {
+    padding: 1rem;
+background-color: beige;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+
+.footer__logo {
+    width: 100px;
+    height: 100px;
+}
+
+.footer__derechos {
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+/*.underline {
+    list-style-type:none;
+       font-size: 20px;
+    text-decoration: none;
+    color: white;
+    display: inline; 
+} */
+
+/*.linea {
+   
+    display: inline;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNnlPQbrb-7KvvqszBQ7kt6GP3ARXAvEB73A&usqp=CAUhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_k0I6wWPe4eG47EqOlKmGWM_gcxiRdbnbRw&usqp=CAU);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+       width: 100px;
+    height: 100px;
+    padding: 1rem;
+    margin: 1rem;
+  
+    border: 2px solid black
+    
+
+    
+    
+    
+  } */
+
+/*.linea-dos {
+   
+    text-decoration: none;
+    color: black;
+    display: inline;
+    background-color: #CFDB2F;
+    width: 200px;
+    height: 100px;
+    padding: 1rem;
+    margin-top: 2 rem;
+    font-size: 30px;
+    border: 2px solid black
+    
+     
+   } */
+
+ /*  .linea-tres {
+    text-decoration: none;
+    color: black;
+    display: inline;
+    background-color: #CFDB2F;
+    width: 0px;
+    height: 0px;
+    padding: 1rem;
+    margin-left: 60rem;
+    font-size: 30px;
+    border: 2px solid black
+    
+     
+   } */
+   /*
+.slogan{
+    font-family: 'Montserrat';
+    background-color: #F18423;
+    background-image: url();
+    border-radius: 15px;
+border:5px solid black; 
+margin: 60px 180px; 
+padding: 15px;
+text-align: center;
+width: 50rem;
+font-size: 40px;
+
+} */
+ 
+/*.body {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(https://scontent.faep9-3.fna.fbcdn.net/v/t39.30808-6/278761278_5107843725925143_4234078990555212484_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeG9rt_6Co-ytn32oBlfrIUkOVVXtkx1vlc5VVe2THW-VzWLF0BxqWW30t5u06W4Vs2ectUIid8mSoozwijApyVv&_nc_ohc=m7ekCUSXiRgAX8C81BY&_nc_ht=scontent.faep9-3.fna&oh=00_AT-6lJulz6eI44JhrcbMHGEJam2EzKQ9-UoXQ6e2DwKccw&oe=62642B6C)
+       
+} */
+
+/*.center {
+    text-align: center; 
+    margin: 80px 180px; 
+padding: 15px;
+} */
+
+/*
+.ayuda {
+    font-size: 60px;
+    margin: 4rem;
+    text-align: center;
+}
+.bloque {
+    display: block;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.formulario {
+    display: block;
+    font-size: 30px;
+    text-align:justify;
+    margin: 4rem;
+    padding: 1rem;
+
+
+}
+.buttom {
+    display: block;
+    font-size: 30px;
+    text-align:center;
+    margin: 3rem;
+
+
+}
+
+.foro {
+    display: block;
+    font-size: 40px;
+    text-align:justify;
+    margin: 3rem;
+    width: 60rem;
+    height: 7rem;
+}
+.noticias {
+    display: inline-block;
+    margin: 4rem;
+    padding: 1rem;
+} */
+
+.footer__icono {
+display: none;
+}
+
+.header__icono {
+    display: none;
+}
+
+.jam-close-rectangle {
+    display: none;
+}
+
+.categorias__grids {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 220px);
+    gap: 1rem;
+    
+    
+}
+
+.categorias__items {
+    background-color: rgb(59, 47, 82);
+    color: bisque;
+    border-radius: 10px;
+    padding: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.categorias__img {
+    position: absolute;
+    right: -1rem;
+    bottom: -1rem;
+    transform: rotate(30deg);
+    transition: 1s;
+
+}
+ .categoria__item--1 {
+     background-color: #F18423;
+ }
+ .categoria__item--2 {
+    background-color:#CFDB2F;
+}
+.categoria__item--3 {
+    background-color:aquamarine;
+}
+  
+
+/*para que la imagen se mueva cuando paso con el mouse:*/
+.categorias__items:hover .categorias__img {
+    transform: rotate(0deg);
+}
+
+
+.gradientes {
+    width: 100%;
+    height: 500px;
+    /*background-color: yellow; */
+/*background-image: linear-gradient(direccion, color1, color2); */
+background-image: linear-gradient(to bottom, #F18423, #CFDB2F);
+/*Si quiero hacerlo de otra direccion utilizo los GRADOS: deg*/
+background-image: linear-gradient(45deg, #F18423, #CFDB2F);
+}
+
+
+.transform-translate {
+    width: 300px;
+    height: 300px;
+    background-color: yellow;
+    color: black;
+    background-image: url(../imagenes/kyrgios.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+        /*"translatey" para mover en el eje Y*/
+ /*"translatex" para mover en el eje X*/
+    /* transform: translate(eje x, eje y);*/
+    transform: translate(100px,200px);
+
+    /*Otro valor importante de TRasnform --> SCALE (ESCALA), aca ponemos el tamaño...valor por defecto:1*/
+    /*"scaley" para agrandar en el eje Y*/
+ /*"scalex" para agrandar en el eje X*/
+    transform: scale(0.5); /*ahi lo achico*/
+    transform: scale(1.5); /*ahi lo agrando*/
+    transform: scalex(1);
+
+    /*Otro valor importante --> Rotate(grados)*/
+    transform: rotate(45deg);
+     /*"rotatey" para rotar en el eje Y*/
+ /*"rotatex" para rotar en el eje X*/
+ transform: rotatey(45deg);
+ transform: rotate(360deg); /*esto para dejarlo normal*/
+
+    /*Ultimo valor importante --> skew*/
+    transform: skew(20deg, 10deg);
+
+    /*se puede aplicar todo junto:*/
+
+    transform: translate(100px, 200px) scale(0.7) rotate(20deg) skew(20deg, 10deg);
+
+    transition: transform 2s;
+}
+
+.transform-translate {
+    transition: all 2s;
+}
+
+.gradientes:hover .transform-translate {
+    width: 500px;
+    height: 400px;
+}
+
+.caja {
+    width: 400px;
+    height: 400px; 
+    overflow: hidden;
+}
+
+.foto {
+    width: 100%;
+    height: 100%; 
+    transition: transform 2s;
+    object-fit: cover;
+}
+
+
+.caja:hover img {
+    transform: scale(1.5);
+}
+
+/*HAY PLATAFORMAS PARA HACER ANIMACIONES Y COPIAR: animista.net*/
+.animacion {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    border-radius: 50%;
+    /*para que la animacion funcione necesito el name y la duration*/
+    animation-name: efectos;
+    animation-duration: 2s;
+    /*cantidad de veces que se repite*/
+    animation-iteration-count: 5;
+    
+    animation-timing-function:ease-in-out ; /*linear, ease, ease-in, ease-out  JUEGA CON LOS TIEMPOS DE LA ANIMACION*/
+    animation-delay: 2s; /*tiempo que tardara en comenzar*/
+}
+
+@keyframes efectos {
+    0% {
+        transform: rotate(0deg) translate(0);
+    }
+    50% {
+        transform: rotate(180deg) translate(300px); 
+    }
+    100% {
+        transform: rotate(0deg) translate(0);
+    }
+}
+
+.desaparecer {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    animation-name: desaparecer;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes desaparecer {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*Media Queys -> van al final d enuestros estilos
+@media screen and (max-widht: 600px) {Estilos para movil...}
+@media screen and (max-widht: 1024px) {Estilos para tablet...}
+*/
+
+@media screen and (max-width: 1023px) {
+  
+    .header {
+        background-color: red;
+        flex-direction: column;
+    }
+
+
+    .footer {
+        background-color: red;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .seccion1 {
+       display: flex; 
+       height: 100vh;
+    }
+    .header {
+        background-color: rgb(206, 147, 147);
+        flex-direction: row;
+            }
+    .nav {
+        display: none;
+    }
+ 
+    .header__icono {
+        display: block;
+        font-size: 64px;
+        color: white;
+        
+        text-decoration: none;
+    }
+    .seccion1__titulo {
+        font-size: 60px;
+    }
+    .seccion1__subtitulo {
+        font-size: 20px;
+        color: white;
+    }
+    .seccion1__parrafo {
+        font-size: 10px;
+        text-align: center;
+        height: 10px;
+    }
+    .footer {
+        background-color: rgb(206, 147, 147);
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer__icono {
+        display: block;
+        font-size: 32px;
+        color: green;
+        text-decoration: none;
+        }
+
+    #lateral {
+        display: block;
+        background-color: #f18323e5;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 100;
+        transition: left 1s;
+    } 
+
+    #lateral:target {
+        left: 0;
+    }
+
+    .nav__lista {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem; }
+
+    .jam-close-rectangle {
+            display: block;
+        }
+    
+}
