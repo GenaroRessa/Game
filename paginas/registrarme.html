@@ -1,19 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+
+  <link rel="stylesheet" href="../css/style.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
 <title>Game Noticias - Registrarme</title>
 </head>
-<body>
-    <header>
-        <img src="../imagenes/game-noticias.jpg" alt="Logotipo Game" width="300" height="300">
-    </header>
+<body class="body">
+ 
+    <header class="header">
+    
+    
+        <a href="index.html" class="header__marca">
+          <img src="../imagenes/game-noticias.jpg" alt="Logotipo Game" width="100" height="100" class="header__logo">
+        </a>
+    
+        <a href="#lateral" class="header__icono">
+          <span class="jam jam-menu"></span>
+        </a>
+    
+       <nav class="nav" id="lateral">         
+          
+          <ul class="nav__lista">
+            <li class="nav__item"><a href="../index.html" class="nav__enlace">Inicio</a></li>
+            <li class="nav__item"><a href="../paginas/foro.html" class="nav__enlace">Foro</a></li>
+            <li class="nav__item"><a href="../paginas/iniciar-sesion.html" class="nav__enlace">Iniciar Sesion</a></li>
+            <li class="nav__item"><a href="../paginas/ayuda.html" class="nav__enlace">Ayuda</a></li>
+            <li class="nav__item"><a href="../paginas/noticias.html" class="nav__enlace">Noticias</a></li>
+                   <li class="nav__item"><a href="../paginas/registrarme.html" target="_blank" class="nav__enlace">Registrarme</a></li>
+            <li class="nav__item"><a href="#" class="nav__enlace"><span class="jam jam-close-rectangle"></span></a></li>
+          </ul>
+          
+     </nav> 
+      
+      </header>
    
      <form action="donde se va a enviar esta informacion" method="como se va a enviar esa info: get(publica) o post (privada)" enctype="en que codificacion se va a enviar esa info" class="formulario">
         <!--van a colocar si o si los campos de formulario y el boton de envio-->
@@ -88,10 +116,21 @@
       <!--boton de envio 1-->
       <input type="submit" value="Enviar" class="buttom">
 
-    <footer>
-        <img src="../imagenes/game-noticias.jpg" alt="Logotipo Game" width="150" height="150">
+      <footer class="footer">
+        <img src="../imagenes/game-noticias.jpg" alt="Logotipo Game" width="200" height="200" class="footer__logo">
       
-        Derechos reservados de Game 
-    </footer>
+        
+      <a href="registrarme.html" target="_blank" class="footer__registrarme">Registrarme</a>
+      
+      <a href="" class="footer__icono">
+        <span class="jam jam-whatsapp"></span>  
+      </a>
+        
+      
+      
+      <p class="footer__derechos">Derechos reservados - Game </p> 
+      </footer> 
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -103,6 +103,14 @@ text-transform: uppercase;
 
 .SECCION3 {
     background-image: linear-gradient(to bottom, #F18423, #CFDB2F);
+    color: white;
+    padding: 100px 0;
+}
+
+
+.seccion3__enlace {
+    text-decoration: none;
+    color: black;
 }
 
 .grid {
