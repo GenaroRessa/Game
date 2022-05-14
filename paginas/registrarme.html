@@ -43,7 +43,8 @@
       
       </header>
    
-     <form action="donde se va a enviar esta informacion" method="como se va a enviar esa info: get(publica) o post (privada)" enctype="en que codificacion se va a enviar esa info" class="formulario">
+    <section class="registrarme">
+      <form action="donde se va a enviar esta informacion" method="como se va a enviar esa info: get(publica) o post (privada)" enctype="en que codificacion se va a enviar esa info" class="formulario">
         <!--van a colocar si o si los campos de formulario y el boton de envio-->
         <div>
             <label for="Nombre">Nombre Completo:</label>
@@ -61,22 +62,24 @@
             <input type="email" id="Correo" name="Correo" placeholder="Ingrese su correo">
         </div>
         
-        <div class="row g-3 align-items-center">
+        <br class="row g-3 align-items-center">
             <div class="col-auto">
-              <label for="inputPassword6" class="col-form-label">Password</label>
+              <label for="inputPassword6" class="col-form-label registrarme__contraseña">Contraseña</label>
             </div>
+            <br> </br>
             <div class="col-auto">
-              <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+              <input type="password" id="inputPassword6" class="form-control registrarme__contraseña--barra" aria-describedby="passwordHelpInline">
             </div>
             <div class="col-auto">
               <span id="passwordHelpInline" class="form-text">
-                Must be 8-20 characters long.
+                Debe tener entre 8 y 20 caracteres.
               </span>
             </div>
           </div>
 
         
-                    
+            <div>
+              <h4 class="registrarme__genero">Elija género</h4>    
           <div class="form-check">
             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
             <label class="form-check-label" for="flexRadioDefault1">
@@ -89,10 +92,17 @@
               Femenino
             </label>
           </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Otro
+            </label>
+          </div>
+        </div>    
           
           
-            <label for="exampleDataList" class="form-label">Nacionalidad</label>
-<input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search..." >
+            <label for="exampleDataList" class="form-label registrarme__nacionalidad">Nacionalidad</label>
+<input class="form-control registrarme__barrita" list="datalistOptions" id="exampleDataList" placeholder="Type to search..." >
 <datalist id="datalistOptions">
   <option value="Argentina">
   <option value="España">
@@ -102,8 +112,9 @@
 </datalist>
             
           
-            <label for="comentario">Comentario:</label>
-            <textarea placeholder="Ingrese su comentario" name="comentario" id="comentario" cols="20" rows="5"></textarea>
+            <label  class="registrarme__comentario" for="comentario">Comentario:</label>
+            <br></br>
+            <textarea class="registrarme__comentariocaja" placeholder="Ingrese su comentario" name="comentario" id="comentario" cols="20" rows="5"></textarea>
            
             <div>
                 <label for="terminos">Aceptar Términos y Condiciones</label>
@@ -112,6 +123,8 @@
 
       <!--boton de envio 1-->
       <input type="submit" value="Enviar" class="buttom">
+
+    </section>
 
       <footer class="footer">
         <img src="../imagenes/game-noticias.jpg" alt="Logotipo Game" width="200" height="200" class="footer__logo">
