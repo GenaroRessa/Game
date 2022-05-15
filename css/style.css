@@ -7,7 +7,7 @@
 
 
 .body {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat'; 
     
     
 }
@@ -28,7 +28,7 @@ margin: 4rem;
 
 .header {
 padding: 1rem;
-background-color: beige;
+background-color: #f183231e;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
@@ -38,8 +38,8 @@ align-items: center;
 }
 
 .header__marca {
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px; 
 }
 
 .header__logo {
@@ -47,10 +47,7 @@ align-items: center;
 
 }
 
-.nav {
-    padding: 1rem;
 
-}
 
 .nav__lista {
     
@@ -69,33 +66,38 @@ align-items: center;
 .nav__enlace {
     color: black;
     text-decoration: none;
-    font-size: 25px;
-    text-shadow: 1px 1px 1px white;
+    font-size: 22px;
+    font-weight: bold;
+    /*text-shadow: 1px 1px 1px white; */
 }
 
 
 
 .seccion1 {
 height: 500px;
-width: 1900px;
-background-color: #CFDB2F; 
-color: #F18423;
+width: 100%;
+/*background-color: #CFDB2F; 
+color: #F18423; */
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 
-background-image:url(../imagenes/blob.png);
+/*background-image:url(../imagenes/blob.png);
 background-size: cover;
-background-position: 420px center;
+background-position: 450px center;
+background-repeat: no-repeat;
+margin-bottom: 2rem; */
+
+background-image: url(../imagenes/fondo\ portal.png);
+background-size: cover;
+background-position: center;
 background-repeat: no-repeat;
 margin-bottom: 2rem;
 
-
-
 }
 
-.seccion1__titulo{
+/*.seccion1__titulo{
     font-size: 140px;
     margin-bottom: 1rem;
     text-shadow: 1px 1px 1px #000;
@@ -103,16 +105,18 @@ margin-bottom: 2rem;
 
 .seccion1__subtitulo{
     font-size: 50px;
-    /*font-style: italic; */
+    font-style: italic; 
     margin-bottom: 2rem;
     margin-left: 1REM;
     text-shadow: 1px 1px 1px #000;
    
-}
+} */
 
 
 .seccion2__titulo {
     font-size: 60px;
+    margin: 1rem;
+    font-weight: bold;
 }
 
 
@@ -120,6 +124,9 @@ margin-bottom: 2rem;
     background-image: linear-gradient(to bottom, #F18423, #CFDB2F);
     color: white;
     padding: 100px 0;
+    border: 2px solid rgb(90, 85, 85);
+    margin: 0.5rem;
+    
 }
 
 .seccion3__titulo {
@@ -130,11 +137,13 @@ justify-content: center;
 align-items: center;
 margin-top: 0;
 text-shadow: 1px 1px 1px #000;
+font-weight: bold;
 }
 
 .seccion3__parrafo {
     font-size: 20px;
     margin: 2rem;
+    font-weight: bold;
     
 }
 
@@ -240,7 +249,7 @@ align-content:center;
  
  
  /*EJ: 
-  justify-content: space-between ;         /*Tambien podemos separarlo usando SPACE 
+  justify-content: space-between ;         Tambien podemos separarlo usando SPACE 
  align-content: flex-end;  */ 
 
 
@@ -261,7 +270,7 @@ align-content:center;
    overflow:hidden;
     position: relative;
     object-fit:cover;
-    
+    justify-content: center;
 
 }
 
@@ -283,7 +292,7 @@ background-color: #F18423;
 .grid2__hijo--2 {
     grid-area: 2elemento2;
 background-color: #F18423;
-
+justify-content: center;
 }
 
 .grid2__hijo--3 {
@@ -315,7 +324,7 @@ background-color:  #CFDB2F;
     font-size: 20px;
     text-align: center;
     margin: 1rem;
-    justify-content: flex-start;
+    justify-content: center;
     align-content:center;
     overflow:hidden;
     
@@ -327,6 +336,7 @@ background-color:  #CFDB2F;
 .grid {
     border: 2px solid grey;
     padding: 1rem;
+    margin: 1rem;
     
 
     /* Propiedad obligatoria para isar CSS Grid */
@@ -405,6 +415,7 @@ align-content:stretch;
    overflow: hidden;
     position: relative;
     object-fit: cover;
+    font-weight: bold;
 
 }
 
@@ -418,6 +429,7 @@ height: 50%;
 .grid__hijo--1 {
     grid-area: elemento1;
     background-image: linear-gradient(to top, #F18423, #CFDB2F);
+    
 
 
 }
@@ -477,52 +489,96 @@ height: 50%;
     margin: 1rem;
 }
 
-
+.noticias__carrusel {
+    width: 50%;
+    height: 50%;
+   
+}
 
 .registrarme {
     padding: 3rem;
     font-size: 20px;
+    flex-direction:column;
+    list-style: none;
+   }
+
+   /*.registrarme__email {
+    margin-top: 2rem;
+
+   } */
+
+   
+   .registrarme__nombre--barra {
+    width: 600px;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+   }
+   
+   .registrarme__edad--barra {
+    width: 600px;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+   }
+
+
+   .registrarme__email--barra {
+    width: 600px;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
    }
 
 .registrarme__contraseña--barra {
     width: 600px;
-    margin-top: -4rem;
+    margin-top: 0.5rem;
 }
 
 .registrarme__genero {
     font-size: 20px;
     margin-top: 2rem;
-    margin-bottom: 1rem;
+   
 }
    .registrarme__nacionalidad {
        margin-top: 2rem;
    }
-   .registrarme__barrita {
+   .registrarme__nacionalidad--barra {
        width: 600px;
-   }
+      
+      }
 
    .registrarme__comentario {
        
        margin-top: 2rem ;
    }
 
-.registrarme__comentariocaja {
+.registrarme__comentario--caja {
     border-radius: 10px;
     border-color:black;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     margin-top: -1rem;
+    padding-left: 8px;
+    padding-top: 5px;
 }
 
+.registrarme__terminos {
+    margin-bottom: 2rem;
+}
+
+.registrarme__buttom {
+    background-color: #f18323b2;
+    border-radius: 10px;
+    padding: 5px;
+}
 
 .footer {
     padding: 1rem;
-background-color: beige;
+background-color: #f183231e;
 display: flex;
 flex-direction: row;
-justify-content: space-between;
+justify-content: space-between; 
 align-items: center;
-margin-bottom: 0;
+
 }
+
 
 .footer__logo {
     width: 100px;
