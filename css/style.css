@@ -422,7 +422,7 @@ align-content:stretch;
 
 /* Esta forma es mas simple, pero tambien podriamos haber puesto ".Grid__img" y ponerle esa clase a cada imagen */
 .grid__hijo--img {
-width: 40%;
+width: 50%; 
 height: 50%;
 }
 
