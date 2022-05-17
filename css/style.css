@@ -148,11 +148,7 @@ font-weight: bold;
 }
 
 
-.seccion3__img {
-    margin-top: 5rem;
-    width: 400px;
-    margin-left: 5rem;
-}
+
 
 .gradiente__caja {
    
@@ -171,6 +167,14 @@ font-weight: bold;
     transform: scale(1.3);
 }
 
+.seccion3__img {
+    margin-top: 3rem;
+    width: 500px;
+    height: 500px;
+    margin-left: 5rem;
+   
+border-radius: 10px;
+}
 .containter__card {
     background-image: linear-gradient(to bottom, #F18423, #CFDB2F);
     padding: 2rem;
@@ -422,9 +426,32 @@ align-content:stretch;
 
 
 /* Esta forma es mas simple, pero tambien podriamos haber puesto ".Grid__img" y ponerle esa clase a cada imagen */
-.grid__hijo--img {
-width: 50%; 
-height: 50%;
+.grid__hijo1--img {
+width: 1200px; 
+height: 500px;
+margin-top: 2rem;
+margin-bottom: 2rem;
+border: 1px solid beige;
+border-radius: 15px;
+}
+
+.grid__hijo25--img {
+    width: 400px; 
+    height: 300px;
+    margin-top: 2rem;
+margin-bottom: 2rem;
+border: 1px solid beige;
+border-radius: 15px;
+
+}
+
+.grid__hijo34--img {
+    width: 800px; 
+    height: 400px;
+    margin-top: 2rem;
+margin-bottom: 2rem;
+border: 1px solid beige;
+border-radius: 15px;
 }
 
 .grid__hijo--1 {
@@ -487,7 +514,8 @@ height: 50%;
 .grid__hijo--span {
     font-size: 20px;
     display: block;
-    margin: 1rem;
+    margin-top: 1rem;
+    align-content: flex-end;
 }
 
 .noticias__carrusel {
