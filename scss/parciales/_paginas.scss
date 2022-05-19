@@ -1,0 +1,93 @@
+.noticias__carrusel {
+    width: 50%;
+    height: 50%;
+   
+  }
+  
+  .registrarme {
+    padding: 3rem;
+    font-size: 20px;
+    flex-direction:column;
+    list-style: none;
+   }
+  
+   /*.registrarme__email {
+    margin-top: 2rem;
+  
+   } */
+  
+   
+   .registrarme__nombre--barra {
+    width: 600px;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+   }
+   
+   .registrarme__edad--barra {
+    width: 600px;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+   }
+  
+  
+   .registrarme__email--barra {
+    width: 600px;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+   }
+  
+  .registrarme__contraseña--barra {
+    width: 600px;
+    margin-top: 0.5rem;
+  }
+  
+  .registrarme__genero {
+    font-size: 20px;
+    margin-top: 2rem;
+   
+  }
+   .registrarme__nacionalidad {
+       margin-top: 2rem;
+   }
+   .registrarme__nacionalidad--barra {
+       width: 600px;
+      
+      }
+  
+   .registrarme__comentario {
+       
+       margin-top: 2rem ;
+   }
+  
+  .registrarme__comentario--caja {
+    border-radius: 10px;
+    border-color:black;
+    margin-bottom: 2rem;
+    margin-top: -1rem;
+    padding-left: 8px;
+    padding-top: 5px;
+  }
+  
+  .registrarme__terminos {
+    margin-bottom: 2rem;
+  }
+  
+  .registrarme__buttom {
+    background-color: #f18323b2;
+    border-radius: 10px;
+    padding: 5px;
+  }
+
+  .ayuda {
+    margin: 4rem;
+    }
+    
+    .ayuda__titulo {
+      font-size: 80px;
+    }
+    
+    
+    .ayuda__acordeon {
+      margin: 4rem;
+    
+    }

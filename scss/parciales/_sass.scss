@@ -1,0 +1,16 @@
+$vista: mobile;
+$color: red;
+
+@if $vista == leo {
+$color: green;
+} 
+@else if $vista == mobile {
+    $color: orange;
+}
+@else {
+
+}
+
+.sass{
+    color: $color;
+}

@@ -1,0 +1,231 @@
+.grid2 {
+    border: 2px solid grey;
+    padding: 1rem;
+    text-align: center; 
+ 
+  display: grid;
+ grid-template-columns: 100px 100px 100px;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: repeat(4, 1fr);
+  
+  grid-template-rows: 200px 200px 200px;
+  grid-template-rows: 33% 33% 33%;
+  grid-template-rows:auto;
+ 
+  grid-template-areas: 
+  "2elemento1 2elemento2 2elemento3 2elemento4";
+  
+  
+  justify-items:center;
+  align-items:center;
+  
+  justify-content:center;
+  align-content:center;
+  
+  column-gap: 10px;
+  row-gap: 20px;
+  gap: 10px 20px; 
+  }
+  
+  .grid2__hijo {
+    border: solid beige;
+    padding: 2rem;  
+    color: black;
+    text-align: center;
+   overflow:hidden;
+    position: relative;
+    object-fit:cover;
+    justify-content: center;
+  
+  }
+  
+  
+  /* Esta forma es mas simple, pero tambien podriamos haber puesto ".Grid__img" y ponerle esa clase a cada imagen */
+  .grid2__hijo--img {
+  width: 60%;
+  height: 80%;
+  }
+  
+  .grid2__hijo--1 {
+    grid-area: 2elemento1;
+  background-color: #F18423;
+  }
+  
+  .grid2__hijo--2 {
+    grid-area: 2elemento2;
+  background-color: #F18423;
+  justify-content: center;
+  }
+  
+  .grid2__hijo--3 {
+    grid-area: 2elemento3;
+  background-color: #CFDB2F;
+  
+  }
+  
+  .grid2__hijo--4 {
+    grid-area: 2elemento4;
+  background-color:  #CFDB2F;
+  
+  
+  }
+  
+  
+  .grid2__texto {
+    position: absolute;
+    bottom: 0;   
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.349);   
+    color: black;
+    padding: 0.5rem 1rem;
+   
+  }
+  
+  .grid2__hijo--parrafo {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    margin: 1rem;
+    justify-content: center;
+    align-content:center;
+    overflow:hidden;
+    
+  
+    
+  }
+  
+  
+  .grid {
+    border: 2px solid grey;
+    padding: 1rem;
+    margin: 1rem;
+      display: grid;
+
+  grid-template-columns: 100px 100px 100px;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: repeat(3, 1fr);
+ 
+  grid-template-rows: 200px 200px 200px;
+  grid-template-rows: 33% 33% 33%;
+  grid-template-rows: repeat(3, 1fr);
+  
+  grid-template-areas: 
+  "elemento1 elemento1 elemento1"
+  "elemento2 elemento3 elemento3"
+  "elemento4 elemento4 elemento5";
+  
+  justify-items:center;
+  align-items:stretch;
+  justify-content: flex-start;
+  align-content:stretch;
+  column-gap: 10px;
+  row-gap: 20px;
+  gap: 10px 20px; 
+  }
+  
+  .grid__hijo {
+    border: solid beige;
+    padding: 0.5rem;  
+    color: white;
+    text-align: center;
+   overflow: hidden;
+    position: relative;
+    object-fit: cover;
+    font-weight: bold;
+  
+  }
+  
+  
+  /* Esta forma es mas simple, pero tambien podriamos haber puesto ".Grid__img" y ponerle esa clase a cada imagen */
+  .grid__hijo1--img {
+  width: 1200px; 
+  height: 500px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid beige;
+  border-radius: 15px;
+  }
+  
+  .grid__hijo25--img {
+    width: 400px; 
+    height: 300px;
+    margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid beige;
+  border-radius: 15px;
+  
+  }
+  
+  .grid__hijo34--img {
+    width: 800px; 
+    height: 400px;
+    margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid beige;
+  border-radius: 15px;
+  }
+  
+  .grid__hijo--1 {
+    grid-area: elemento1;
+    background-image: linear-gradient(to top, #F18423, #CFDB2F);
+    
+  
+  
+  }
+  
+  .grid__hijo--2 {
+    grid-area: elemento2;
+    background-image: linear-gradient(to left, #F18423, #CFDB2F);
+  
+  }
+  
+  .grid__hijo--3 {
+    grid-area: elemento3;
+    background-image: linear-gradient(to right, #F18423, #CFDB2F);
+  
+  }
+  
+  .grid__hijo--4 {
+    grid-area: elemento4;
+    background-image: linear-gradient(to right, #F18423, #CFDB2F);
+  
+  
+  }
+  
+  .grid__hijo--5 {
+    grid-area: elemento5;
+    background-image: linear-gradient(to left, #F18423, #CFDB2F);
+  
+  }
+  
+  
+  .grid__texto {
+    position: absolute;
+    bottom: 0;   
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.801);   
+    color: white;
+    padding: 0.5rem 1rem;
+   
+  }
+  
+  .grid__hijo--parrafo {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    margin: 1rem;
+    justify-content: flex-start;
+    align-content:center;
+    overflow:hidden;
+    
+  
+    
+  }
+  
+  .grid__hijo--span {
+    font-size: 20px;
+    display: block;
+    margin-top: 1rem;
+    align-content: flex-end;
+  }
+  

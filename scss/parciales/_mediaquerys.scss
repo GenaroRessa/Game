@@ -1,0 +1,115 @@
+@media screen and (max-width: 1023px) {
+  
+    .header {
+        background-color: red;
+        flex-direction: column;
+    }
+  
+  
+    .footer {
+        background-color: red;
+        flex-direction: column;
+        gap: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .seccion1 {
+       display: flex; 
+       height: 100vh;
+    }
+    .header {
+        background-color: rgb(206, 147, 147);
+        flex-direction: row;
+            }
+    .nav {
+        display: none;
+    }
+  
+    .header__icono {
+        display: block;
+        font-size: 64px;
+        color: white;
+        
+        text-decoration: none;
+    }
+    .seccion1__titulo {
+        font-size: 60px;
+    }
+    .seccion1__subtitulo {
+        font-size: 20px;
+        color: white;
+    }
+    .seccion1__parrafo {
+        font-size: 10px;
+        text-align: center;
+        height: 10px;
+    }
+    .footer {
+        background-color: rgb(206, 147, 147);
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer__icono {
+        display: block;
+        font-size: 32px;
+        color: green;
+        text-decoration: none;
+        }
+  
+    #lateral {
+        display: block;
+        background-color: #f18323e5;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 100;
+        transition: left 1s;
+    } 
+  
+    #lateral:target {
+        left: 0;
+    }
+  
+    .nav__lista {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem; }
+  
+    .jam-close-rectangle {
+            display: block;
+        }
+  
+        
+        .grid {
+            grid-template-columns: 1;
+            grid-template-rows: repeat(5, 1fr);
+            grid-template-areas: 
+         "elemento1"
+         "elemento2"
+         "elemento3"
+         "elemento4"
+         "elemento5";
+        
+         justify-items:center;
+         align-items:stretch;
+         /*Si tenemos espacio disponible en el padre, podemos mover todos los cuadraditos a una punta o a la otra (o al centro) usando
+         JUSTIFY-CONTENT y ALIGN CONTENT */
+        
+        justify-content: flex-start;
+        align-content:stretch;
+         
+         
+         /*EJ: 
+          justify-content: space-between ;         /*Tambien podemos separarlo usando SPACE 
+         align-content: flex-end;  */ 
+        
+        
+         /* Permite generar un hueco o separacion interna entre filas y columnas. ESO VA EN EL PADRE*/
+         column-gap: 10px;
+         row-gap: 20px;
+         /*eso mismo se puede escribir de la siguiente manera: */
+         gap: 10px 20px; 
+        } }
