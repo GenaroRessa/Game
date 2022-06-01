@@ -1,0 +1,59 @@
+.categorias__grids {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 220px);
+    gap: 1rem;
+    
+    
+}
+
+.categorias__items {
+    background-color: rgb(59, 47, 82);
+    color: bisque;
+    border-radius: 10px;
+    padding: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.categorias__img {
+    position: absolute;
+    right: -1rem;
+    bottom: -1rem;
+    transform: rotate(30deg);
+    transition: 1s;
+
+}
+ .categoria__item--1 {
+     background-color: #F18423;
+ }
+ .categoria__item--2 {
+    background-color:#CFDB2F;
+}
+.categoria__item--3 {
+    background-color:#F18423;
+}
+.categoria__item--4 {
+    background-color: #CFDB2F;
+}
+.categoria__item--5 {
+   background-color:#F18423;
+}
+.categoria__item--6 {
+   background-color:#CFDB2F;
+}
+.categoria__item--7 {
+    background-color:#F18423;
+}
+.categoria__item--8 {
+    background-color: #CFDB2F;
+}
+.categoria__item--9 {
+   background-color:#F18423;
+}
+  
+
+/*para que la imagen se mueva cuando paso con el mouse:*/
+.categorias__items:hover .categorias__img {
+    transform: rotate(0deg);
+} 
