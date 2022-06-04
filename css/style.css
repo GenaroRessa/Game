@@ -56,7 +56,7 @@
 
 .seccion1 {
   height: 500px;
-  width: 100%;
+  width: 1300px;
   /*background-color: #CFDB2F; 
     color: #F18423; */
   display: flex;
@@ -407,6 +407,10 @@
   padding: 5px;
 }
 
+.iniciarsesion {
+  margin: 2rem;
+}
+
 .ayuda {
   margin: 4rem;
 }
@@ -417,6 +421,20 @@
 
 .ayuda__acordeon {
   margin: 4rem;
+}
+
+.foro {
+  margin: 1rem;
+}
+
+.foro-parrafo {
+  font-size: 10px;
+  margin: 1rem;
+}
+
+.foro-div {
+  display: inline;
+  margin: 1rem;
 }
 
 .categorias__grids {
@@ -519,14 +537,411 @@
 }
 
 @media screen and (max-width: 1023px) {
+  .body {
+    font-family: 'Montserrat';
+  }
   .header {
-    background-color: red;
+    padding: 1rem;
+    padding-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: orange;
     flex-direction: column;
+    width: 100%;
+  }
+  .header__marca {
+    width: 140px;
+    height: 140px;
+  }
+  .header__logo {
+    height: 100%;
+  }
+  .nav__lista {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    /*gap: 1rem;*/
+  }
+  .nav__item {
+    margin-left: 2rem;
+  }
+  .nav__enlace {
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    /*text-shadow: 1px 1px 1px white; */
+  }
+  .header__icono {
+    display: none;
+  }
+  .seccion1 {
+    height: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imagenes/fondo-portal.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 2rem;
+  }
+  /*.seccion1__titulo{
+      font-size: 140px;
+      margin-bottom: 1rem;
+      text-shadow: 1px 1px 1px #000;
+    }
+    
+    .seccion1__subtitulo{
+      font-size: 50px;
+      font-style: italic; 
+      margin-bottom: 2rem;
+      margin-left: 1REM;
+      text-shadow: 1px 1px 1px #000;
+     
+    } */
+  .seccion2__titulo {
+    font-size: 60px;
+    margin: 1rem;
+    font-weight: bold;
+  }
+  .SECCION3 {
+    background-image: linear-gradient(to bottom, #F18423, #CFDB2F);
+    color: white;
+    padding: 50px;
+    border: 2px solid #5a5555;
+    margin: 0.5rem;
+  }
+  .seccion3__titulo {
+    font-size: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    text-shadow: 1px 1px 1px #000;
+    font-weight: bold;
+  }
+  .seccion3__parrafo {
+    font-size: 15px;
+    margin: 2rem;
+    font-weight: bold;
+  }
+  .seccion3__img {
+    margin-top: 3rem;
+    width: 300px;
+    height: 400px;
+    margin-left: 5rem;
+    border-radius: 10px;
+  }
+  .grid2 {
+    border: 2px solid grey;
+    padding: 1rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "2elemento1 2elemento2 2elemento3 2elemento4";
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    column-gap: 10px;
+    row-gap: 2px;
+    gap: 1px 2px;
+  }
+  .grid2__hijo {
+    border: solid beige;
+    padding: 2rem;
+    color: black;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    object-fit: cover;
+    justify-content: center;
+  }
+  /* Esta forma es mas simple, pero tambien podriamos haber puesto ".Grid__img" y ponerle esa clase a cada imagen */
+  .grid2__hijo--img {
+    width: 60%;
+    height: 80%;
+  }
+  .grid2__hijo--1 {
+    grid-area: 2elemento1;
+    background-color: #F18423;
+  }
+  .grid2__hijo--2 {
+    grid-area: 2elemento2;
+    background-color: #F18423;
+    justify-content: center;
+  }
+  .grid2__hijo--3 {
+    grid-area: 2elemento3;
+    background-color: #CFDB2F;
+  }
+  .grid2__hijo--4 {
+    grid-area: 2elemento4;
+    background-color: #CFDB2F;
+  }
+  .grid2__texto {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.349);
+    color: black;
+    padding: 0.5rem 1rem;
+  }
+  .grid2__hijo--parrafo {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    margin: 1rem;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+  }
+  .grid {
+    border: 2px solid grey;
+    padding: 1rem;
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "elemento1 elemento1 elemento1" "elemento2 elemento3 elemento3" "elemento4 elemento4 elemento5";
+    justify-items: center;
+    align-items: stretch;
+    justify-content: flex-start;
+    align-content: stretch;
+    column-gap: 10px;
+    row-gap: 20px;
+    gap: 10px 20px;
+  }
+  .grid__hijo {
+    border: solid beige;
+    padding: 0.5rem;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    object-fit: cover;
+    font-weight: bold;
+  }
+  /* Esta forma es mas simple, pero tambien podriamos haber puesto ".Grid__img" y ponerle esa clase a cada imagen */
+  .grid__hijo1--img {
+    width: 600px;
+    height: 200px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid beige;
+    border-radius: 15px;
+  }
+  .grid__hijo25--img {
+    width: 200px;
+    height: 200px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid beige;
+    border-radius: 15px;
+  }
+  .grid__hijo34--img {
+    width: 400px;
+    height: 200px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid beige;
+    border-radius: 15px;
+  }
+  .grid__hijo--1 {
+    grid-area: elemento1;
+    background-image: linear-gradient(to top, #F18423, #CFDB2F);
+  }
+  .grid__hijo--2 {
+    grid-area: elemento2;
+    background-image: linear-gradient(to left, #F18423, #CFDB2F);
+  }
+  .grid__hijo--3 {
+    grid-area: elemento3;
+    background-image: linear-gradient(to right, #F18423, #CFDB2F);
+  }
+  .grid__hijo--4 {
+    grid-area: elemento4;
+    background-image: linear-gradient(to right, #F18423, #CFDB2F);
+  }
+  .grid__hijo--5 {
+    grid-area: elemento5;
+    background-image: linear-gradient(to left, #F18423, #CFDB2F);
+  }
+  .grid__texto {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.801);
+    color: white;
+    padding: 0.5rem 1rem;
+  }
+  .grid__hijo--parrafo {
+    color: black;
+    font-size: 14px;
+    text-align: justify;
+    margin: 1rem;
+    justify-content: flex-start;
+    align-content: center;
+    overflow: hidden;
+  }
+  .grid__hijo--span {
+    font-size: 14px;
+    display: block;
+    margin-top: 1rem;
+    align-content: flex-end;
+  }
+  .noticias__carrusel {
+    width: 500px;
+    height: 100%;
+    align-content: center;
+    margin: 1rem;
+  }
+  .registrarme {
+    padding: 3rem;
+    font-size: 10px;
+    flex-direction: column;
+    list-style: none;
+  }
+  /*.registrarme__email {
+    margin-top: 2rem;
+  
+   } */
+  .registrarme__nombre--barra {
+    width: 600px;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  .registrarme__edad--barra {
+    width: 600px;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  .registrarme__email--barra {
+    width: 600px;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  .registrarme__contraseña--barra {
+    width: 600px;
+    margin-top: 0.5rem;
+  }
+  .registrarme__genero {
+    font-size: 10px;
+    margin-top: 2rem;
+  }
+  .registrarme__nacionalidad {
+    margin-top: 2rem;
+  }
+  .registrarme__nacionalidad--barra {
+    width: 600px;
+    height: 15px;
+    font-size: 10px;
+  }
+  .registrarme__comentario {
+    margin-top: 2rem;
+  }
+  .registrarme__comentario--caja {
+    border-radius: 10px;
+    border-color: black;
+    margin-bottom: 2rem;
+    margin-top: -1rem;
+    padding-left: 8px;
+    padding-top: 5px;
+  }
+  .registrarme__terminos {
+    margin-bottom: 2rem;
+  }
+  .registrarme__buttom {
+    background-color: #f18323b2;
+    border-radius: 10px;
+    padding: 5px;
+  }
+  .ayuda {
+    margin: 4rem;
+  }
+  .ayuda__titulo {
+    font-size: 50px;
+  }
+  .ayuda__acordeon {
+    margin: 4rem;
+  }
+  .categorias__grids {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 220px);
+    gap: 1rem;
+  }
+  .categorias__items {
+    background-color: #3b2f52;
+    color: bisque;
+    border-radius: 10px;
+    padding: 0.5rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .categorias__img {
+    position: absolute;
+    right: -1rem;
+    bottom: -1rem;
+    transform: rotate(30deg);
+    transition: 1s;
+  }
+  .categoria__item--1 {
+    background-color: #F18423;
+  }
+  .categoria__item--2 {
+    background-color: #CFDB2F;
+  }
+  .categoria__item--3 {
+    background-color: #F18423;
+  }
+  .categoria__item--4 {
+    background-color: #CFDB2F;
+  }
+  .categoria__item--5 {
+    background-color: #F18423;
+  }
+  .categoria__item--6 {
+    background-color: #CFDB2F;
+  }
+  .categoria__item--7 {
+    background-color: #F18423;
+  }
+  .categoria__item--8 {
+    background-color: #CFDB2F;
+  }
+  .categoria__item--9 {
+    background-color: #F18423;
+  }
+  /*para que la imagen se mueva cuando paso con el mouse:*/
+  .categorias__items:hover .categorias__img {
+    transform: rotate(0deg);
   }
   .footer {
-    background-color: red;
+    padding: 1rem;
+    background-color: orange;
+    display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     gap: 20px;
+  }
+  .footer__logo {
+    width: 100px;
+    height: 100px;
+  }
+  .footer__derechos {
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+  .footer__icono {
+    display: none;
   }
 }
 
