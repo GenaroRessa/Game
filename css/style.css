@@ -71,8 +71,8 @@
 }
 
 .SECCION3 {
-  background-image: linear-gradient(to bottom, #F18423, #CFDB2F);
-  color: white;
+  background-color: #f183231e;
+  color: black;
   padding: 100px 0;
   border: 2px solid #5a5555;
   margin: 0.5rem;
@@ -85,7 +85,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 0;
-  text-shadow: 1px 1px 1px #000;
+  text-shadow: 1px 1px 1px rgba(128, 128, 128, 0.678);
   font-weight: bold;
 }
 
@@ -233,10 +233,6 @@
   margin: 0 auto;
 }
 
-/*.registrarme__email {
-    margin-top: 2rem;
-  
-   } */
 .registrarme__nombre--barra {
   width: 100%;
   margin-top: 0.5rem;
@@ -298,33 +294,46 @@
 }
 
 .iniciarsesion {
-  margin: 2rem;
+  padding: 3rem;
+  font-size: 20px;
+  flex-direction: column;
+  list-style: none;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .ayuda {
-  margin: 4rem;
+  margin: 1rem 0;
+  text-align: center;
 }
 
 .ayuda__titulo {
-  font-size: 80px;
+  font-size: 30px;
 }
 
 .ayuda__acordeon {
-  margin: 4rem;
+  margin: 1rem;
 }
 
 .foro {
   margin: 1rem;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  list-style: none;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
-.foro-parrafo {
-  font-size: 10px;
-  margin: 1rem;
+.foro-nombre {
+  font-weight: bold;
+  font-size: 25px;
 }
 
-.foro-div {
-  display: inline;
-  margin: 1rem;
+.foro-texto {
+  font-size: 20px;
 }
 
 .categorias__grids {
@@ -443,6 +452,12 @@ main {
 
 .categorias {
   padding: 3rem 1rem;
+}
+
+.btn {
+  background-color: white;
+  border: 1px solid #333;
+  color: #333;
 }
 
 @media screen and (max-width: 1023px) {
