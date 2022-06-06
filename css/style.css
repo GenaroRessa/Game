@@ -56,43 +56,18 @@
 
 .seccion1 {
   height: 500px;
-  width: 1300px;
-  /*background-color: #CFDB2F; 
-    color: #F18423; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /*background-image:url(../imagenes/blob.png);
-    background-size: cover;
-    background-position: 450px center;
-    background-repeat: no-repeat;
-    margin-bottom: 2rem; */
-  background-image: url(../imagenes/fondo-portal.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-bottom: 2rem;
+  width: 100%;
 }
 
-/*.seccion1__titulo{
-      font-size: 140px;
-      margin-bottom: 1rem;
-      text-shadow: 1px 1px 1px #000;
-    }
-    
-    .seccion1__subtitulo{
-      font-size: 50px;
-      font-style: italic; 
-      margin-bottom: 2rem;
-      margin-left: 1REM;
-      text-shadow: 1px 1px 1px #000;
-     
-    } */
+.seccion1__img {
+  width: 100%;
+  height: 100%;
+}
+
 .seccion2__titulo {
   font-size: 60px;
-  margin: 1rem;
   font-weight: bold;
+  margin-bottom: 0;
 }
 
 .SECCION3 {
@@ -221,115 +196,27 @@
   overflow: hidden;
 }
 
-.grid {
-  border: 2px solid grey;
-  padding: 1rem;
-  margin: 1rem;
-  display: grid;
-  grid-template-columns: 100px 100px 100px;
-  grid-template-columns: 33% 33% 33%;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 200px 200px 200px;
-  grid-template-rows: 33% 33% 33%;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: "elemento1 elemento1 elemento1" "elemento2 elemento3 elemento3" "elemento4 elemento4 elemento5";
-  justify-items: center;
-  align-items: stretch;
-  justify-content: flex-start;
-  align-content: stretch;
-  column-gap: 10px;
-  row-gap: 20px;
-  gap: 10px 20px;
-}
-
-.grid__hijo {
-  border: solid beige;
-  padding: 0.5rem;
-  color: white;
-  text-align: center;
-  overflow: hidden;
+.card {
+  height: 100%;
   position: relative;
+  /* background-image: linear-gradient(to top, #F18423, #CFDB2F); */
+  background-color: beige;
+}
+
+.card-img-top {
+  max-height: 400px;
   object-fit: cover;
-  font-weight: bold;
-}
-
-/* Esta forma es mas simple, pero tambien podriamos haber puesto ".Grid__img" y ponerle esa clase a cada imagen */
-.grid__hijo1--img {
-  width: 1200px;
-  height: 500px;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  border: 1px solid beige;
-  border-radius: 15px;
-}
-
-.grid__hijo25--img {
-  width: 400px;
-  height: 300px;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  border: 1px solid beige;
-  border-radius: 15px;
-}
-
-.grid__hijo34--img {
-  width: 800px;
-  height: 400px;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  border: 1px solid beige;
-  border-radius: 15px;
-}
-
-.grid__hijo--1 {
-  grid-area: elemento1;
-  background-image: linear-gradient(to top, #F18423, #CFDB2F);
-}
-
-.grid__hijo--2 {
-  grid-area: elemento2;
-  background-image: linear-gradient(to left, #F18423, #CFDB2F);
-}
-
-.grid__hijo--3 {
-  grid-area: elemento3;
-  background-image: linear-gradient(to right, #F18423, #CFDB2F);
-}
-
-.grid__hijo--4 {
-  grid-area: elemento4;
-  background-image: linear-gradient(to right, #F18423, #CFDB2F);
-}
-
-.grid__hijo--5 {
-  grid-area: elemento5;
-  background-image: linear-gradient(to left, #F18423, #CFDB2F);
+  object-position: top center;
 }
 
 .grid__texto {
   position: absolute;
-  bottom: 0;
+  top: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.801);
   color: white;
   padding: 0.5rem 1rem;
-}
-
-.grid__hijo--parrafo {
-  color: black;
-  font-size: 20px;
-  text-align: center;
-  margin: 1rem;
-  justify-content: flex-start;
-  align-content: center;
-  overflow: hidden;
-}
-
-.grid__hijo--span {
-  font-size: 20px;
-  display: block;
-  margin-top: 1rem;
-  align-content: flex-end;
+  display: inline-block;
 }
 
 .noticias__carrusel {
@@ -342,6 +229,8 @@
   font-size: 20px;
   flex-direction: column;
   list-style: none;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 /*.registrarme__email {
@@ -349,25 +238,25 @@
   
    } */
 .registrarme__nombre--barra {
-  width: 600px;
+  width: 100%;
   margin-top: 0.5rem;
   margin-bottom: 2rem;
 }
 
 .registrarme__edad--barra {
-  width: 600px;
+  width: 100%;
   margin-top: 0.5rem;
   margin-bottom: 2rem;
 }
 
 .registrarme__email--barra {
-  width: 600px;
+  width: 100%;
   margin-top: 0.5rem;
   margin-bottom: 2rem;
 }
 
 .registrarme__contraseña--barra {
-  width: 600px;
+  width: 100%;
   margin-top: 0.5rem;
 }
 
@@ -381,7 +270,7 @@
 }
 
 .registrarme__nacionalidad--barra {
-  width: 600px;
+  width: 100%;
 }
 
 .registrarme__comentario {
@@ -395,6 +284,7 @@
   margin-top: -1rem;
   padding-left: 8px;
   padding-top: 5px;
+  width: 100%;
 }
 
 .registrarme__terminos {
@@ -525,15 +415,34 @@
   display: none;
 }
 
-.containter__card {
-  background-image: linear-gradient(to bottom, #F18423, #CFDB2F);
-  padding: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+.seccion4 {
+  padding-bottom: 3rem;
+}
+
+.seccion4 .card {
+  background-color: #333;
+  color: #fff;
 }
 
 .jam-close-rectangle {
   display: none;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.carousel-item img {
+  height: 350px;
+  object-fit: cover;
+}
+
+.noticias__carrusel {
+  margin: 0 auto;
+}
+
+.categorias {
+  padding: 3rem 1rem;
 }
 
 @media screen and (max-width: 1023px) {
@@ -579,15 +488,6 @@
   .seccion1 {
     height: 350px;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../imagenes/fondo-portal.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-bottom: 2rem;
   }
   /*.seccion1__titulo{
       font-size: 140px;
@@ -604,23 +504,19 @@
      
     } */
   .seccion2__titulo {
-    font-size: 60px;
+    font-size: 45px;
     margin: 1rem;
     font-weight: bold;
   }
   .SECCION3 {
     background-image: linear-gradient(to bottom, #F18423, #CFDB2F);
     color: white;
-    padding: 50px;
+    padding: 0;
     border: 2px solid #5a5555;
-    margin: 0.5rem;
+    margin: 0;
   }
   .seccion3__titulo {
-    font-size: 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    font-size: 45px;
     margin-top: 0;
     text-shadow: 1px 1px 1px #000;
     font-weight: bold;
@@ -632,9 +528,9 @@
   }
   .seccion3__img {
     margin-top: 3rem;
-    width: 300px;
+    width: 100%;
     height: 400px;
-    margin-left: 5rem;
+    margin-left: 0;
     border-radius: 10px;
   }
   .grid2 {
@@ -773,14 +669,6 @@
     grid-area: elemento5;
     background-image: linear-gradient(to left, #F18423, #CFDB2F);
   }
-  .grid__texto {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.801);
-    color: white;
-    padding: 0.5rem 1rem;
-  }
   .grid__hijo--parrafo {
     color: black;
     font-size: 14px;
@@ -797,10 +685,10 @@
     align-content: flex-end;
   }
   .noticias__carrusel {
-    width: 500px;
+    width: 100%;
     height: 100%;
     align-content: center;
-    margin: 1rem;
+    margin: 0;
   }
   .registrarme {
     padding: 3rem;
@@ -813,22 +701,18 @@
   
    } */
   .registrarme__nombre--barra {
-    width: 600px;
     margin-top: 0.5rem;
     margin-bottom: 2rem;
   }
   .registrarme__edad--barra {
-    width: 600px;
     margin-top: 0.5rem;
     margin-bottom: 2rem;
   }
   .registrarme__email--barra {
-    width: 600px;
     margin-top: 0.5rem;
     margin-bottom: 2rem;
   }
   .registrarme__contraseña--barra {
-    width: 600px;
     margin-top: 0.5rem;
   }
   .registrarme__genero {
@@ -839,7 +723,6 @@
     margin-top: 2rem;
   }
   .registrarme__nacionalidad--barra {
-    width: 600px;
     height: 15px;
     font-size: 10px;
   }
@@ -871,10 +754,13 @@
   .ayuda__acordeon {
     margin: 4rem;
   }
+  .categorias {
+    padding: 3rem 1rem;
+  }
   .categorias__grids {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 220px);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 220px);
     gap: 1rem;
   }
   .categorias__items {
@@ -947,8 +833,7 @@
 
 @media screen and (max-width: 600px) {
   .seccion1 {
-    display: flex;
-    height: 100vh;
+    height: 300px;
   }
   .header {
     background-color: #ce9393;

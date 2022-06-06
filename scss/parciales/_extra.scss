@@ -1,11 +1,29 @@
-.containter__card {
-    background-image: linear-gradient(to bottom, #F18423, #CFDB2F);
-    padding: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    
-  }
+.seccion4 {
+  padding-bottom: 3rem;
+}
 
-  .jam-close-rectangle {
-    display: none;
-  }
+.seccion4 .card {
+  background-color: #333;
+  color: #fff;
+}
+
+.jam-close-rectangle {
+  display: none;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.carousel-item img {
+  height: 350px;
+  object-fit: cover;
+}
+
+.noticias__carrusel {
+  margin: 0 auto;
+}
+
+.categorias {
+  padding: 3rem 1rem;
+}

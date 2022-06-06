@@ -9,6 +9,8 @@
     font-size: 20px;
     flex-direction:column;
     list-style: none;
+    max-width: 600px;
+    margin: 0 auto;
    }
   
    /*.registrarme__email {
@@ -18,26 +20,26 @@
   
    
    .registrarme__nombre--barra {
-    width: 600px;
+    width: 100%;
     margin-top: 0.5rem;
     margin-bottom: 2rem;
    }
    
    .registrarme__edad--barra {
-    width: 600px;
+    width: 100%;
     margin-top: 0.5rem;
     margin-bottom: 2rem;
    }
   
   
    .registrarme__email--barra {
-    width: 600px;
+    width: 100%;
     margin-top: 0.5rem;
     margin-bottom: 2rem;
    }
   
   .registrarme__contraseña--barra {
-    width: 600px;
+    width: 100%;
     margin-top: 0.5rem;
   }
   
@@ -50,7 +52,7 @@
        margin-top: 2rem;
    }
    .registrarme__nacionalidad--barra {
-       width: 600px;
+       width: 100%;
       
       }
   
@@ -66,6 +68,7 @@
     margin-top: -1rem;
     padding-left: 8px;
     padding-top: 5px;
+    width: 100%;
   }
   
   .registrarme__terminos {
