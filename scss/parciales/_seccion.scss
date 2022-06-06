@@ -70,3 +70,28 @@
      
     border-radius: 10px;
     }
+
+    .card-img__seccion2 {
+      max-height: 400px;
+      object-fit: cover;
+      object-position: top center;
+    }
+    
+    .card__seccion2 {
+    background-color: beige;
+    }
+    
+    .card__seccion4 {
+      background-color: #333;
+      color: white;
+    }
+    
+    .card {
+      height: 100%;
+     }
+    
+    .card-title {
+      font-size: 30px;
+      font-weight: bold;
+    }
+    

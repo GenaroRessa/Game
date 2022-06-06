@@ -35,7 +35,6 @@
   display: flex;
   list-style: none;
   flex-direction: row;
-  /*gap: 1rem;*/
 }
 
 .nav__item {
@@ -47,7 +46,6 @@
   text-decoration: none;
   font-size: 22px;
   font-weight: bold;
-  /*text-shadow: 1px 1px 1px white; */
 }
 
 .header__icono {
@@ -118,105 +116,28 @@
   border-radius: 10px;
 }
 
-.grid2 {
-  border: 2px solid grey;
-  padding: 1rem;
-  text-align: center;
-  display: grid;
-  grid-template-columns: 100px 100px 100px;
-  grid-template-columns: 33% 33% 33%;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 200px 200px 200px;
-  grid-template-rows: 33% 33% 33%;
-  grid-template-rows: auto;
-  grid-template-areas: "2elemento1 2elemento2 2elemento3 2elemento4";
-  justify-items: center;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  column-gap: 10px;
-  row-gap: 20px;
-  gap: 10px 20px;
-}
-
-.grid2__hijo {
-  border: solid beige;
-  padding: 2rem;
-  color: black;
-  text-align: center;
-  overflow: hidden;
-  position: relative;
-  object-fit: cover;
-  justify-content: center;
-}
-
-/* Esta forma es mas simple, pero tambien podriamos haber puesto ".Grid__img" y ponerle esa clase a cada imagen */
-.grid2__hijo--img {
-  width: 60%;
-  height: 80%;
-}
-
-.grid2__hijo--1 {
-  grid-area: 2elemento1;
-  background-color: #F18423;
-}
-
-.grid2__hijo--2 {
-  grid-area: 2elemento2;
-  background-color: #F18423;
-  justify-content: center;
-}
-
-.grid2__hijo--3 {
-  grid-area: 2elemento3;
-  background-color: #CFDB2F;
-}
-
-.grid2__hijo--4 {
-  grid-area: 2elemento4;
-  background-color: #CFDB2F;
-}
-
-.grid2__texto {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.349);
-  color: black;
-  padding: 0.5rem 1rem;
-}
-
-.grid2__hijo--parrafo {
-  color: black;
-  font-size: 20px;
-  text-align: center;
-  margin: 1rem;
-  justify-content: center;
-  align-content: center;
-  overflow: hidden;
-}
-
-.card {
-  height: 100%;
-  position: relative;
-  /* background-image: linear-gradient(to top, #F18423, #CFDB2F); */
-  background-color: beige;
-}
-
-.card-img-top {
+.card-img__seccion2 {
   max-height: 400px;
   object-fit: cover;
   object-position: top center;
 }
 
-.grid__texto {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.801);
+.card__seccion2 {
+  background-color: beige;
+}
+
+.card__seccion4 {
+  background-color: #333;
   color: white;
-  padding: 0.5rem 1rem;
-  display: inline-block;
+}
+
+.card {
+  height: 100%;
+}
+
+.card-title {
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .noticias__carrusel {
@@ -336,6 +257,13 @@
   font-size: 20px;
 }
 
+.foro-titulo {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1rem;
+}
+
 .categorias__grids {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -396,7 +324,6 @@
   background-color: #F18423;
 }
 
-/*para que la imagen se mueva cuando paso con el mouse:*/
 .categorias__items:hover .categorias__img {
   transform: rotate(0deg);
 }
@@ -460,10 +387,21 @@ main {
   color: #333;
 }
 
+.grid__texto {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.801);
+  color: white;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+}
+
 @media screen and (max-width: 1023px) {
   .body {
     font-family: 'Montserrat';
   }
+
   .header {
     padding: 1rem;
     padding-top: 0;
@@ -474,55 +412,48 @@ main {
     flex-direction: column;
     width: 100%;
   }
+
   .header__marca {
     width: 140px;
     height: 140px;
   }
+
   .header__logo {
     height: 100%;
   }
+  
   .nav__lista {
     display: flex;
     list-style: none;
     flex-direction: row;
-    /*gap: 1rem;*/
   }
+
   .nav__item {
     margin-left: 2rem;
   }
+
   .nav__enlace {
     color: black;
     text-decoration: none;
     font-size: 22px;
     font-weight: bold;
-    /*text-shadow: 1px 1px 1px white; */
   }
+
   .header__icono {
     display: none;
   }
+
   .seccion1 {
     height: 350px;
     width: 100%;
   }
-  /*.seccion1__titulo{
-      font-size: 140px;
-      margin-bottom: 1rem;
-      text-shadow: 1px 1px 1px #000;
-    }
-    
-    .seccion1__subtitulo{
-      font-size: 50px;
-      font-style: italic; 
-      margin-bottom: 2rem;
-      margin-left: 1REM;
-      text-shadow: 1px 1px 1px #000;
-     
-    } */
-  .seccion2__titulo {
+  
+    .seccion2__titulo {
     font-size: 45px;
     margin: 1rem;
     font-weight: bold;
   }
+
   .SECCION3 {
     background-image: linear-gradient(to bottom, #F18423, #CFDB2F);
     color: white;
@@ -530,17 +461,20 @@ main {
     border: 2px solid #5a5555;
     margin: 0;
   }
+
   .seccion3__titulo {
     font-size: 45px;
     margin-top: 0;
     text-shadow: 1px 1px 1px #000;
     font-weight: bold;
   }
+
   .seccion3__parrafo {
     font-size: 15px;
     margin: 2rem;
     font-weight: bold;
   }
+
   .seccion3__img {
     margin-top: 3rem;
     width: 100%;
@@ -548,6 +482,7 @@ main {
     margin-left: 0;
     border-radius: 10px;
   }
+
   .grid2 {
     border: 2px solid grey;
     padding: 1rem;
@@ -564,6 +499,7 @@ main {
     row-gap: 2px;
     gap: 1px 2px;
   }
+
   .grid2__hijo {
     border: solid beige;
     padding: 2rem;
@@ -574,28 +510,33 @@ main {
     object-fit: cover;
     justify-content: center;
   }
-  /* Esta forma es mas simple, pero tambien podriamos haber puesto ".Grid__img" y ponerle esa clase a cada imagen */
+  
   .grid2__hijo--img {
     width: 60%;
     height: 80%;
   }
+
   .grid2__hijo--1 {
     grid-area: 2elemento1;
     background-color: #F18423;
   }
+
   .grid2__hijo--2 {
     grid-area: 2elemento2;
     background-color: #F18423;
     justify-content: center;
   }
+
   .grid2__hijo--3 {
     grid-area: 2elemento3;
     background-color: #CFDB2F;
   }
+
   .grid2__hijo--4 {
     grid-area: 2elemento4;
     background-color: #CFDB2F;
   }
+
   .grid2__texto {
     position: absolute;
     bottom: 0;
@@ -604,6 +545,7 @@ main {
     color: black;
     padding: 0.5rem 1rem;
   }
+
   .grid2__hijo--parrafo {
     color: black;
     font-size: 20px;
@@ -613,6 +555,7 @@ main {
     align-content: center;
     overflow: hidden;
   }
+
   .grid {
     border: 2px solid grey;
     padding: 1rem;
@@ -620,7 +563,9 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "elemento1 elemento1 elemento1" "elemento2 elemento3 elemento3" "elemento4 elemento4 elemento5";
+    grid-template-areas: "elemento1 elemento1 elemento1"
+ "elemento2 elemento3 elemento3"
+ "elemento4 elemento4 elemento5";
     justify-items: center;
     align-items: stretch;
     justify-content: flex-start;
@@ -629,6 +574,7 @@ main {
     row-gap: 20px;
     gap: 10px 20px;
   }
+
   .grid__hijo {
     border: solid beige;
     padding: 0.5rem;
@@ -639,7 +585,7 @@ main {
     object-fit: cover;
     font-weight: bold;
   }
-  /* Esta forma es mas simple, pero tambien podriamos haber puesto ".Grid__img" y ponerle esa clase a cada imagen */
+ 
   .grid__hijo1--img {
     width: 600px;
     height: 200px;
@@ -648,6 +594,7 @@ main {
     border: 1px solid beige;
     border-radius: 15px;
   }
+
   .grid__hijo25--img {
     width: 200px;
     height: 200px;
@@ -656,6 +603,7 @@ main {
     border: 1px solid beige;
     border-radius: 15px;
   }
+
   .grid__hijo34--img {
     width: 400px;
     height: 200px;
@@ -664,6 +612,7 @@ main {
     border: 1px solid beige;
     border-radius: 15px;
   }
+
   .grid__hijo--1 {
     grid-area: elemento1;
     background-image: linear-gradient(to top, #F18423, #CFDB2F);
@@ -711,10 +660,7 @@ main {
     flex-direction: column;
     list-style: none;
   }
-  /*.registrarme__email {
-    margin-top: 2rem;
-  
-   } */
+ 
   .registrarme__nombre--barra {
     margin-top: 0.5rem;
     margin-bottom: 2rem;
@@ -820,7 +766,7 @@ main {
   .categoria__item--9 {
     background-color: #F18423;
   }
-  /*para que la imagen se mueva cuando paso con el mouse:*/
+ 
   .categorias__items:hover .categorias__img {
     transform: rotate(0deg);
   }
@@ -911,21 +857,14 @@ main {
   .grid {
     grid-template-columns: 1;
     grid-template-rows: repeat(5, 1fr);
-    grid-template-areas: "elemento1" "elemento2" "elemento3" "elemento4" "elemento5";
+    grid-template-areas: "elemento1"
+ "elemento2"
+ "elemento3"
+ "elemento4"
+ "elemento5";
     justify-items: center;
     align-items: stretch;
-    /*Si tenemos espacio disponible en el padre, podemos mover todos los cuadraditos a una punta o a la otra (o al centro) usando
-         JUSTIFY-CONTENT y ALIGN CONTENT */
-    justify-content: flex-start;
+       justify-content: flex-start;
     align-content: stretch;
-    /*EJ: 
-          justify-content: space-between ;         /*Tambien podemos separarlo usando SPACE 
-         align-content: flex-end;  */
-    /* Permite generar un hueco o separacion interna entre filas y columnas. ESO VA EN EL PADRE*/
-    column-gap: 10px;
-    row-gap: 20px;
-    /*eso mismo se puede escribir de la siguiente manera: */
-    gap: 10px 20px;
   }
 }
-/*# sourceMappingURL=style.css.map */

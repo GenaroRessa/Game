@@ -1,25 +1,22 @@
 .footer {
-    padding: 1rem;
+  padding: 1rem;
   background-color: #f183231e;
   display: flex;
   flex-direction: row;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
-  
-  }
-  
-  
-  .footer__logo {
-    width: 100px;
-    height: 100px;
-  }
-  
-  .footer__derechos {
-    font-size: 10px;
-    text-transform: uppercase;
-  }
-  
-   
-  .footer__icono {
+}
+
+.footer__logo {
+  width: 100px;
+  height: 100px;
+}
+
+.footer__derechos {
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.footer__icono {
   display: none;
-  }
+}
